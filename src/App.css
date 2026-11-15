@@ -1,0 +1,378 @@
+
+/* Header */
+.header {
+  background: linear-gradient(110deg, #c8b6e2, #a8bfa5);
+  color: #34313b;
+  padding: 30px 25px;
+  text-align: left;
+}
+
+.header h1 {
+  font-size: 42px;
+  margin: 0 0 20px;
+  color: #34313b;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 25px;
+}
+
+
+.navbar a {
+  background-color: #e5ede2;
+  color: #594776;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: 2px solid #c8b6e2;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+
+
+.navbar a:hover {
+  background-color: #c8b6e2;
+  color: #34313b;
+  transform: translateY(-2px);
+}
+
+
+/* Main Blog Layout */
+.main-content {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.post-container {
+  background: #ffffff;
+  padding: 40px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  border: 1px solid #e5ede2;
+  box-shadow: 0 5px 18px rgba(115, 105, 135, 0.12);
+}
+
+/* Blog Posts */
+.blog-post h2 {
+  font-size: 32px;
+  color: #76618e;
+  margin-top: 0;
+}
+
+.post-content {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #41434a;
+}
+
+.post-info {
+  margin-top: 25px;
+  color: #60666a;
+}
+
+.post-info p {
+  margin: 8px 0;
+}
+
+/* Comments */
+.comments-section {
+  margin-top: 40px;
+}
+
+.comments-section h2 {
+  font-size: 28px;
+  color: #76618e;
+  margin-bottom: 15px;
+}
+
+.comments-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.comments-section textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 15px;
+  font-size: 17px;
+  color: #41434a;
+  background: #faf8fc;
+  border: 1px solid #c8b6e2;
+  border-radius: 10px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.comments-section textarea:focus {
+  outline: 2px solid #a8bfa5;
+}
+
+.comments-section button {
+  background: #a8bfa5;
+  color: #263829;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.comments-section button:hover {
+  background: #91ab8e;
+}
+
+.comments-section h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #76618e;
+  margin-top: 30px;
+}
+
+.comments-list {
+  padding-left: 25px;
+  color: #41434a;
+}
+
+.comments-list li {
+  margin: 12px 0;
+  font-size: 18px;
+}
+
+/* Footer */
+.footer {
+  background: #76618e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .header {
+    text-align: center;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .navbar {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .main-content {
+    margin: 30px auto;
+  }
+
+  .post-container {
+    padding: 20px;
+  }
+
+  .blog-post h2 {
+    font-size: 26px;
+  }
+  
+}
+
+
+/* Like Button */
+.like-button {
+  background-color: #e5ede2;
+  color: #594776;
+  border: 2px solid #c8b6e2;
+  border-radius: 25px;
+  padding: 10px 22px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.like-button:hover {
+  background-color: #c8b6e2;
+  transform: translateY(-2px);
+}
+
+.like-button[aria-pressed="true"] {
+  background-color: #c8b6e2;
+  color: #34313b;
+  border-color: #a994cc;
+}
+
+.like-button:focus-visible {
+  outline: 3px solid #76618e;
+  outline-offset: 3px;
+}
+
+
+
+/* About and Contact Sections */
+.info-section {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 35px 40px;
+  background-color: #ffffff;
+  border: 1px solid #e5ede2;
+  border-radius: 15px;
+  box-shadow: 0 5px 18px rgba(115, 105, 135, 0.12);
+}
+
+.info-section h2 {
+  color: #76618e;
+  font-size: 28px;
+  margin-top: 0;
+}
+
+.info-section p {
+  color: #41434a;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* Mobile Styling */
+@media (max-width: 600px) {
+  .info-section {
+    margin: 20px;
+    padding: 25px;
+  }
+
+  .info-section h2 {
+    font-size: 24px;
+  }
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c8b6e2;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #76618e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.contact-form button:hover {
+  background-color: #594776;
+}
+
+
+/* Light and Dark Mode */
+.app {
+  min-height: 100vh;
+  background-color: #f8f6fa;
+  color: #34313b;
+  display: flow-root;
+}
+
+.app.dark {
+  background-color: #24202e;
+  color: #f5f0fa;
+}
+
+.app.dark .post-container {
+  background-color: #383145;
+  border-color: #594c6a;
+}
+
+.app.dark .post-container h2,
+.app.dark .comments-section h2,
+.app.dark .comments-section h3 {
+  color: #d9c4f2;
+}
+
+.app.dark .post-container p,
+.app.dark .post-content,
+.app.dark .post-info,
+.app.dark .comments-list {
+  color: #f0eaf5;
+}
+
+.app.dark .navbar a {
+  color: #594776;
+}
+
+.app.dark .navbar a:hover {
+  color: #c8b6e2;
+}
+
+.app.dark .contact-form input,
+.app.dark .contact-form textarea,
+.app.dark .comment-form input,
+.app.dark .comment-form textarea {
+  background-color: #4a4058;
+  color: white;
+  border-color: #a994cc;
+}
+
+.app.dark input::placeholder,
+.app.dark textarea::placeholder {
+  color: #d3c7de;
+}
+
+/* Theme Toggle Button */
+.theme-button {
+  background-color: #c8b6e2;
+  color: #34313b;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.theme-button:hover {
+  background-color: #a994cc;
+}
+
+.app.dark .theme-button {
+  background-color: #a8bfa5;
+  color: #263829;
+}
+
+
+/* Comment Name Input */
+.comment-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c8b6e2;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
